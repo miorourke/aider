@@ -1,0 +1,20 @@
+Package: aider
+Title: Everyday functions for data anlaysis
+Version: 0.0.1.0
+Authors@R: 
+    person(given = "Michael",
+           family = "O'Rourke",
+           role = c("aut", "cre"),
+           email = "miorourke@me.com")
+Description: Collection of functions for data analysis. Range from changes to default behaviour of existing (e.g. mean(x, na.rm = TRUE)) to useful user defined functions. Easy save and load without the long winded file paths.
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: 
+    RODBC,
+    stats,
+    utils,
+    stringr,
+    rstudioapi
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
