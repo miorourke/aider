@@ -3,6 +3,7 @@
 export(extract_rodbc)
 export(iqr_)
 export(load_object)
+export(make_data_dir)
 export(max_)
 export(mean_)
 export(median_)

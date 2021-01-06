@@ -7,7 +7,9 @@
 #' @param project_path file path of your R project. Defaults to automatically extract the information using the rstudioAPI
 #' @param project_name name of the data directory. Defaults to use the same name as your R project. Will extract it from project_path if project is second sub-directory from system root. e.g. 'C:/git/my_project'
 #' @param data_path_root file path of your data directory Defaults to '../../data'
+#' @export
 #' @examples
+#' 
 #' \dontrun{
 #' make_data_dir()
 #' make_data_dir(project_name = "my_project", data_path_root = "../../../data")}

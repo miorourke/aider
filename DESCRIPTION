@@ -1,6 +1,6 @@
 Package: aider
 Title: Everyday functions for data anlaysis
-Version: 0.0.1.0
+Version: 0.0.1.1
 Authors@R: 
     person(given = "Michael",
            family = "O'Rourke",

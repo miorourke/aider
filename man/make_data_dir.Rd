@@ -21,6 +21,7 @@ make_data_dir(
 Creates a directory with the same name as your R project. Defaults to write at '../../data'
 }
 \examples{
+
 \dontrun{
 make_data_dir()
 make_data_dir(project_name = "my_project", data_path_root = "../../../data")}
