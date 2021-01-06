@@ -13,11 +13,17 @@
 #' \dontrun{
 #' save_object(iris, "mydata.rda")
 #' save_object(iris, "mydata.rda", data_path_root = '../../../data')}
-save_object <- function(x, filename, project_path = dirname(rstudioapi::getActiveProject()), project_name = stringr::word(project_path, 3, sep = "/") , data_path_root = '../../data'){
-
-
+save_object <- function(x, filename, project_path = rstudioapi::getActiveProject(), project_name = NA_character_, data_path_root = '../../data'){
+  
+  project_name <- if (is.na(project_name)) {
+    stringr::word(project_path, 3, sep = "/")
+  } else {
+    project_name
+  }
+  
+  
   save_location <- paste0(data_path_root, "/", project_name, "/", filename)
-
+  
   save(x, file = save_location)
 }
 

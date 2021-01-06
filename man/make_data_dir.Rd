@@ -5,8 +5,8 @@
 \title{Create data directory for project}
 \usage{
 make_data_dir(
-  project_path = dirname(rstudioapi::getActiveProject()),
-  project_name = stringr::word(project_path, 3, sep = "/"),
+  project_path = rstudioapi::getActiveProject(),
+  project_name = NA_character_,
   data_path_root = "../../data"
 )
 }
